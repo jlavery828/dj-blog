@@ -2,19 +2,16 @@
 
 <!-- Hero Section-->
 <section
-  style="background: url({% static 'img/hero.jpg' %}); background-size: cover; background-position: center center"
-  class="hero"
->
+  style="background: url({% static 'img/dark-data.jpg' %}); background-size: cover; background-position: center center"
+  class="hero">
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
-        <h1>Bootstrap 4 Blog - A free template by Bootstrap Temple</h1>
+        <h1>Welcome to my Tech Blog</h1>
         <a href="#" class="hero-link">Discover More</a>
       </div>
     </div>
-    <a href=".intro" class="continue link-scroll"
-      ><i class="fa fa-long-arrow-down"></i> Scroll Down</a
-    >
+    <a href=".intro" class="continue link-scroll"><i class="fa fa-long-arrow-down"></i> Scroll Down</a>
   </div>
 </section>
 <!-- Intro Section-->
@@ -57,8 +54,8 @@
               <a href="post.html">
                 <h2 class="h4">
                   {{ obj.title }}
-                </h2></a
-              >
+                </h2>
+              </a>
             </header>
             <p>
               {{ obj.overview }}
@@ -66,16 +63,12 @@
             <footer class="post-footer d-flex align-items-center">
               <a href="#" class="author d-flex align-items-center flex-wrap">
                 <div class="avatar">
-                  <img
-                    src="{{ obj.author.profile_picture.url }}"
-                    alt="..."
-                    class="img-fluid"
-                  />
+                  <img src="{{ obj.author.profile_picture.url }}" alt="..." class="img-fluid" />
                 </div>
                 <div class="title">
                   <span>{{ obj.author }}</span>
-                </div></a
-              >
+                </div>
+              </a>
               <div class="date">
                 <i class="icon-clock"></i> {{ obj.timestamp | timesince }} ago
               </div>
@@ -98,8 +91,7 @@
 <!-- Divider Section-->
 <section
   style="background: url({% static 'img/divider-bg.jpg' %}); background-size: cover; background-position: center bottom"
-  class="divider"
->
+  class="divider">
   <div class="container">
     <div class="row">
       <div class="col-md-7">
@@ -125,9 +117,7 @@
       {% for obj in latest %}
       <div class="post col-md-4">
         <div class="post-thumbnail">
-          <a href="#"
-            ><img src="{{ obj.thumbnail.url }}" alt="..." class="img-fluid"
-          /></a>
+          <a href="#"><img src="{{ obj.thumbnail.url }}" alt="..." class="img-fluid" /></a>
         </div>
         <div class="post-details">
           <div class="post-meta d-flex justify-content-between">
@@ -139,8 +129,8 @@
             </div>
           </div>
           <a href="#">
-            <h3 class="h4">{{ obj.title }}</h3></a
-          >
+            <h3 class="h4">{{ obj.title }}</h3>
+          </a>
           <p class="text-muted">
             {{ obj.overview }}
           </p>
@@ -166,12 +156,7 @@
           <form action="." method="POST">
             {% csrf_token %}
             <div class="form-group">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Type your email address"
-              />
+              <input type="email" name="email" id="email" placeholder="Type your email address" />
               <button type="submit" class="submit">Subscribe</button>
             </div>
           </form>
@@ -185,50 +170,38 @@
   <div class="row">
     <div class="mix col-lg-3 col-md-3 col-sm-6">
       <div class="item">
-        <a href="img/gallery-1.jpg' %}" data-fancybox="gallery" class="image"
-          ><img
-            src="{% static 'img/gallery-1.jpg' %}"
-            alt="..."
-            class="img-fluid"/>
+        <a href="img/gallery-1.jpg' %}" data-fancybox="gallery" class="image"><img
+            src="{% static 'img/gallery-1.jpg' %}" alt="..." class="img-fluid" />
           <div class="overlay d-flex align-items-center justify-content-center">
-            <i class="icon-search"></i></div
-        ></a>
+            <i class="icon-search"></i></div>
+        </a>
       </div>
     </div>
     <div class="mix col-lg-3 col-md-3 col-sm-6">
       <div class="item">
-        <a href="img/gallery-2.jpg' %}" data-fancybox="gallery" class="image"
-          ><img
-            src="{% static 'img/gallery-2.jpg' %}"
-            alt="..."
-            class="img-fluid"/>
+        <a href="img/gallery-2.jpg' %}" data-fancybox="gallery" class="image"><img
+            src="{% static 'img/gallery-2.jpg' %}" alt="..." class="img-fluid" />
           <div class="overlay d-flex align-items-center justify-content-center">
-            <i class="icon-search"></i></div
-        ></a>
+            <i class="icon-search"></i></div>
+        </a>
       </div>
     </div>
     <div class="mix col-lg-3 col-md-3 col-sm-6">
       <div class="item">
-        <a href="img/gallery-3.jpg' %}" data-fancybox="gallery" class="image"
-          ><img
-            src="{% static 'img/gallery-3.jpg' %}"
-            alt="..."
-            class="img-fluid"/>
+        <a href="img/gallery-3.jpg' %}" data-fancybox="gallery" class="image"><img
+            src="{% static 'img/gallery-3.jpg' %}" alt="..." class="img-fluid" />
           <div class="overlay d-flex align-items-center justify-content-center">
-            <i class="icon-search"></i></div
-        ></a>
+            <i class="icon-search"></i></div>
+        </a>
       </div>
     </div>
     <div class="mix col-lg-3 col-md-3 col-sm-6">
       <div class="item">
-        <a href="img/gallery-4.jpg' %}" data-fancybox="gallery" class="image"
-          ><img
-            src="{% static 'img/gallery-4.jpg' %}"
-            alt="..."
-            class="img-fluid"/>
+        <a href="img/gallery-4.jpg' %}" data-fancybox="gallery" class="image"><img
+            src="{% static 'img/gallery-4.jpg' %}" alt="..." class="img-fluid" />
           <div class="overlay d-flex align-items-center justify-content-center">
-            <i class="icon-search"></i></div
-        ></a>
+            <i class="icon-search"></i></div>
+        </a>
       </div>
     </div>
   </div>
