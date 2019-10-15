@@ -9,7 +9,7 @@ from marketing.forms import EmailSignupForm
 from marketing.views import subscribe
 
 
-form = EmailSignupForm()
+#form = EmailSignupForm()
 
 
 def get_author(user):
@@ -44,7 +44,7 @@ def get_category_count():
 def index(request):
     featured = Post.objects.filter(featured=True)
     latest = Post.objects.order_by('-timestamp')[0:3]
-    #form = EmailSignupForm()
+    form = EmailSignupForm()
 
     if request.method == "POST":
         email = request.POST["email"]
