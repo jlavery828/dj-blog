@@ -1,11 +1,15 @@
 from django.db.models import Count, Q
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+
 from .forms import CommentForm, PostForm
 from .models import Post, Author, PostView
 from marketing.models import Signup
 from marketing.forms import EmailSignupForm
 from marketing.views import subscribe
+
+
+form = EmailSignupForm()
 
 
 def get_author(user):
@@ -40,7 +44,7 @@ def get_category_count():
 def index(request):
     featured = Post.objects.filter(featured=True)
     latest = Post.objects.order_by('-timestamp')[0:3]
-    form = EmailSignupForm()
+    #form = EmailSignupForm()
 
     if request.method == "POST":
         email = request.POST["email"]
