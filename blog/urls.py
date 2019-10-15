@@ -4,7 +4,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 
 from posts.views import index, blog, post, search, post_create, post_update, post_delete
-from marketing.views import email_list_signup
+from marketing.views import email_list_signup, subscribe
 
 urlpatterns = [
     path('admin/', admin.site.urls),
