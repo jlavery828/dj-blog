@@ -5,6 +5,7 @@ from .forms import CommentForm, PostForm
 from .models import Post, Author, PostView
 from marketing.models import Signup
 from marketing.forms import EmailSignupForm
+from marketing.views import subscribe
 
 
 def get_author(user):
