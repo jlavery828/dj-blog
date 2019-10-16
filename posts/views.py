@@ -9,7 +9,7 @@ from marketing.forms import EmailSignupForm
 from marketing.views import subscribe
 
 
-#form = EmailSignupForm()
+form = EmailSignupForm()
 
 
 def get_author(user):
