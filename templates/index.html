@@ -1,5 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
+{% url 'email-list-signup' as email-list-signup %}
+
 <!-- Hero Section-->
 <section
   style="background: url({% static 'img/dark-data.jpg' %}); background-size: cover; background-position: center center"
